@@ -99,7 +99,6 @@ if (isset($_GET['t'])) {
 		OCP\Util::addScript('gallery', 'thumbnail');
 		OCP\Util::addStyle('gallery', 'public');
 		$tmpl->assign('token', $token);
-		$tmpl->assign('displayName', $ownerDisplayName);
 		$tmpl->assign('albumName', $albumName);
 
 		$tmpl->printPage();
